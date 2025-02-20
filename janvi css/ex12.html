@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Message</title>
+    <style>
+        .marquee {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            animation: marquee 2s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="marquee">⚠ Important Notice: Stay Safe & Stay Healthy! ⚠</div>
+
+</body>
+</html>
